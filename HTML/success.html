@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Success</title>
+        <link rel="stylesheet" href="index.css"/>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="nav-left">
+                <a href="#" class="nav-item" onclick="window.location.href='homepage.html'">Home Page</a>
+            </div>
+            <button class="logout-btn" onClick="logout()" onclick="window.location.href='index.html'">Logout</button>
+        </nav>
+
+        <div class="content-success">
+            <div class="login-container">
+                <h2>Success Rate</h2>
+
+                <form id="successForm">
+                <div class="input-group">
+                    <label for="resume">Select Resume</label>
+                    <select id="resume-select" required>
+                        <option value="">Choose a resume...</option>
+                    </select>
+                </div>
+
+                <div class="success-rate">
+                    <label id="rate">Current Success Rate = 0</label>
+                </div>
+                <div class="input-group">
+                    <label for="reply">Reply</label>
+                    <input type="text" id="reply" placeholder="How many employers replied" required/>
+                </div>
+
+                <div class="input-group">
+                    <label for="sent">Sent</label>
+                    <input type="text" id="sent" placeholder="How many resumes sent out" required/>
+                </div>
+
+                <button type="button" onClick="calculateRates()">Update</button>
+                </form>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Homepage</title>
+        <link rel="stylesheet" href="index.css"/>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="nav-left">
+                <a href="#" class="nav-item" onclick="window.location.href='success.html'">Success Rate</a>
+            </div>
+            <button class="logout-btn" onClick="logout()" onclick="window.location.href='index.html'">Logout</button>
+        </nav>
+        <div class="content-homepage">
+            <div class="login-container">
+                <h2>Upload Your Resume</h2>
+                
+                <form id="uploadForm">
+                    <div class="input-group">
+                        <div class="file-input-wrapper">
+                            <input type="file" id="fileInput" required/>
+                            <label for="fileInput" class="file-input-label">
+                                Choose File
+                            </label>
+                        </div>
+                        <div class="file-name" id="fileName">No file chosen</div>
+                        <div>
+                            <label for="jobPosition">Job Position</label>
+                            <input type="text" id="jobPosition" placeholder="Enter job position" required/>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" onClick="uploadFile()">Upload</button>
+                </form>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
